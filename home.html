@@ -35,7 +35,7 @@
                   id="checkbox2"
                   onclick="disable2()"
                 />
-                <input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" id="numb2" required/>
+                <input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" id="numb2"   min="0" max="100" required/>
                 <text>£</text>
               </div>
             </div>
@@ -135,7 +135,7 @@
                   id="checkbox10"
                   onclick="disable10()"
                 />
-                <input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" title="Must have number in between 0-100" id="numb10" required />
+                <input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" title="Must have number in between 0-100" id="numb10"   min="0" max="100" required />
                 <text>£</text>
               </div>
             </div>
