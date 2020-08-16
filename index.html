@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assesmd-col-mdent2</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> 
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    
+      <div>
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-3">
+              Estate
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox1"
+                  onclick="disable1()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb1"  required/>
+                <label> %</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox2"
+                  onclick="disable2()"
+                />
+                <input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" id="numb2" required/>
+                <text>£</text>
+              </div>
+            </div>
+            <!-- --- -->
+            <div class="col-md-3">
+              5-6 Passengers
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox3"
+                  onclick="disable3()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" onkeyup="if(this.value<0){this.value= this.value * -1}" id="numb3" required />
+                <text>%</text>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox4"
+                  onclick="disable4()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb4" required />
+                <text>£</text>
+              </div>
+            </div> 
+            <!-- -- -->
+            <div class="col-md">
+              7 Passengers
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox5"
+                  onclick="disable5()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb5" required/>
+                <text>%</text>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox6"
+                  onclick="disable6()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb6"required />
+                <text>£</text>
+              </div>
+            </div>
+            <!-- --- -->
+            <div class="col-md">
+              8 Passengers
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox7"
+                  onclick="disable7()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb7" required/>
+                <text>%</text>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox8"
+                  onclick="disable8()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb8"required />
+                <text>£</text>
+              </div>
+            </div>
+            <!-- ---- -->
+            <div class="col-md">
+              9 Passengers
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox9"
+                  onclick="disable9()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb9" onkeyup="if(this.value<0){this.value= this.value * -1}" required>
+                <text>%</text>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox10"
+                  onclick="disable10()"
+                />
+                <input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" title="Must have number in between 0-100" id="numb10" required />
+                <text>£</text>
+              </div>
+            </div>
+            <!-- ---- -->
+            <div class="col-md">
+              14 Passengers
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox11"
+                  onclick="disable11()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100"id="numb11" required/>
+                <text>%</text>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox12"
+                  onclick="disable12()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100"id="numb12"required />
+                <text>£</text>
+              </div>
+            </div>
+            <!-- ---- -->
+            <div class="col-md">
+              16 Passengers
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox13"
+                  onclick="disable13()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100"id="numb13" required/>
+                <text>%</text>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkbox14"
+                  onclick="disable14()"
+                />
+                <input type="number" min="0" max="100" title="Must have number in between 0-100" id="numb14" required />
+                <text>£</text>
+              </div>
+
+          
+            </div>
+          </div>
+        </br>
+        <div>
+            <button  id="onSubmit" type="submit" class="btn btn-primary" onclick="validation()">Submit</button>
+        </div>
+        </div>
+      
+    </div>
+  </body>
+</html>
